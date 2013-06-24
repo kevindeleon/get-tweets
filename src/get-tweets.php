@@ -47,7 +47,7 @@ class GetTweets {
 		);
 		
 		//tweets returned by Twitter
-	    $tweets = (array) $cb->statuses_userTimeline($params);
+		$tweets = (array) $cb->statuses_userTimeline($params);
 		
 		//Let's encode it for our JS/jQuery to make sure and return it
 		return json_encode($tweets);
