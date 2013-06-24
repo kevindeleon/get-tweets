@@ -5,7 +5,7 @@ A PHP + JS solution for retrieving your most recent tweets to display on your we
 
 ### Reason
 
-I wrote this solution based on Twitter's blogger.js (https://twitter.com/javascripts/blogger.js). The JS files in my source borrow heavily from their logic. When Twitter released it's new V1.1 API and retired V1, it broke my site (and many others). I am mostly putting this on github to store for myself, but if it helps you out, great!
+I wrote this solution based on Twitter's blogger.js (https://twitter.com/javascripts/blogger.js). The JS files in my source borrow heavily from their logic. When Twitter released it's new V1.1 API and retired V1, it broke my site (and many others). I am mostly putting this on github to store for myself, but if it helps you out, great! My class leans on codebird-php to do the, now required, OAuth lifting.
 
 ### What does it do?
 
