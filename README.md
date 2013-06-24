@@ -14,6 +14,7 @@ You can use this combo of PHP + JS to grab your latest tweets. Depending on the 
 ### Requirements
 
 This solution requires the following which are not included in this repo:
+* Webserver running PHP 5.3 or higher with CURL and OpenSSL PHP extensions enabled
 * jQuery http://jquery.com/ (tested w/ v 1.7.2)
 * codebird-php https://github.com/mynetx/codebird-php (tested w/ v 2.4.1)
 
