@@ -1,16 +1,16 @@
-/*!
-* get-tweets.js
-* http://github.com/kevindeleon/get-tweets
-*
-* Copyright 2013, Kevin deLeon
-* Licensed under the MIT license.
-* http://github.com/kevindeleon/get-tweets/blob/master/LICENSE
-*
-* Much of this logic was derrived from blogger.js from Twitter and converted to jQuery
-* The releative_time function was take directly from Twitter's blogger.js 
-*
-* Author: Kevin deLeon (http://github.com/kevindeleon)
-*/
+/**
+ * get-tweets.js
+ * http://github.com/kevindeleon/get-tweets
+ *
+ * Copyright 2013, Kevin deLeon
+ * Licensed under the MIT license.
+ * http://github.com/kevindeleon/get-tweets/blob/master/LICENSE
+ *
+ * Much of this logic was derrived from blogger.js from Twitter and converted to jQuery
+ * The releative_time function was take directly from Twitter's blogger.js 
+ *
+ * Author: Kevin deLeon (http://github.com/kevindeleon)
+ */
 
 // Receives JSON object returned by get_most_recent from get-tweets.php
 function display_tweets(tweets) {
