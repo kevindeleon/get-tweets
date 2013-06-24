@@ -11,6 +11,12 @@ I wrote this solution based on Twitter's blogger.js (https://twitter.com/javascr
 
 You can use this combo of PHP + JS to grab your latest tweets. Depending on the parameters passed, you can include retweets and choose the number of tweets to display.
 
+### Requirements
+
+This solution requires the following which are not included in this repo:
+* jQuery http://jquery.com/ (tested w/ v 1.7.2)
+* codebird-php https://github.com/mynetx/codebird-php (tested w/ v 2.4.1)
+
 ### Installation + Usage
 
 For a detailed tutorial on how to set things up, visit: http://kevin-deleon.com/2013/06/tutorial-display-recent-tweets-using-jquery-php-and-twitters-api/
