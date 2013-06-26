@@ -15,11 +15,11 @@
 // Receives JSON object returned by get_most_recent from get-tweets.php
 function display_tweets(tweets) {
     var statusHTML = "";
-	jQuery.each(tweets, function(i, tweet) {
-	    //let's check to make sure we actually have a tweet
-		if (tweet.text !== undefined) {
-			var username = tweet.user.screen_name;
-			//let's grab the tweet, and do some housekeeping to display it properly
+    jQuery.each(tweets, function(i, tweet) {
+        //let's check to make sure we actually have a tweet
+        if (tweet.text !== undefined) {
+            var username = tweet.user.screen_name;
+            //let's grab the tweet, and do some housekeeping to display it properly
             var status = tweet.text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
                 return '<a href="'+url+'">'+url+'</a>';
             }).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
@@ -30,8 +30,8 @@ function display_tweets(tweets) {
             jQuery('.tweet-loader').remove();
             //display tweet(s)
             jQuery('#twitter_update_list').append(statusHTML);  
-		}
-	});
+        }
+    });
 }
 
 // taken from Twitter's blogger.js
