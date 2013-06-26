@@ -19,13 +19,16 @@ function display_tweets(tweets) {
 	    //let's check to make sure we actually have a tweet
 		if (tweet.text !== undefined) {
 			var username = tweet.user.screen_name;
+			//let's grab the tweet, and do some housekeeping to display it properly
             var status = tweet.text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
                 return '<a href="'+url+'">'+url+'</a>';
             }).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
                 return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
             });
             statusHTML = '<p><span>'+status+'</span> <a style="font-size:85%" href="http://twitter.com/'+username+'/statuses/'+tweet.id_str+'">'+relative_time(tweet.created_at)+'</a></p>';
+            //remove the loader
             jQuery('.tweet-loader').remove();
+            //display tweet(s)
             jQuery('#twitter_update_list').append(statusHTML);  
 		}
 	});
