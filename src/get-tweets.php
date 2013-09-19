@@ -43,7 +43,7 @@ class GetTweets {
 		$params = array(
 			'screen_name' => $screen_name,
 			'count' => $count,
-			'rts' => $retweets,
+			'include_rts' => $retweets,
 		);
 		
 		//tweets returned by Twitter
